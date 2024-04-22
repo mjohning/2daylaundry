@@ -1,0 +1,255 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Expres;
+}
+
+@font-face {
+    font-family: Expres;
+    src: url('a1.ttf') format('truetype');
+}
+
+.container {
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    border-top: 10px; /* Menambahkan lengkungan pada sudut container */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #14AAF5;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top-left-radius: 10px;  /* Menambahkan lengkungan pada sudut navbar */
+    border-top-right-radius: 10px;
+}
+
+.logo-container {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: left;
+}
+
+#logo {
+    width: 300px; /* Perbesar logo */
+    margin: auto;
+}
+
+#Brand {
+    font-size: 36px; /* Perbesar teks brand */
+}
+
+/* Bottom Logo*/
+.Bot {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    background-color: #f4c430;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#a, #o, #p {
+    text-align: center;
+    margin: auto;
+    font-size: 25px;
+    color: #007bff;
+}
+
+/* Welcome Section Styles */
+.One {
+    padding: 50px 0;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #f2f2f2); /* Ubah warna latar belakang menjadi gradasi */
+}
+
+#Wellcome {
+    color: #007bff;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+#Bin {
+    font-size: 50px;
+}
+
+/* main untuk ajakan*/
+.Main {
+    margin-top: 15px;
+    margin-bottom: 0;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.Main p {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Service Section Styles */
+.Par {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Mengatur menjadi satu kolom */
+    grid-gap: 20px; /* Ruang antara item */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service-item {
+    width: 100%; /* Menempatkan item ke lebar penuh kolom */
+    padding: 10px;
+}
+
+.Par img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+#A, #B, #C {
+    color: #007bff;
+    font-size: 36px; /* Perbesar ukuran font nama segment */
+    font-weight: bold;
+    margin-top: 20px; /* Menambahkan jarak antara nama segment dan deskripsi */
+}
+
+#a1, #a2, #a3 {
+    font-size: 20px; /* Perbesar ukuran font deskripsi */
+    margin-top: 10px; /* Menambahkan jarak antara deskripsi dan item selanjutnya */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Order Section Styles */
+.End {
+    background-color: #14AAF5;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#ParOr {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#Or {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: white;
+    color: #14AAF5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#Or a{
+    text-decoration: none;
+    color: #14AAF5; 
+}
+#Or:hover {
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3 ease, color 0.3 ease;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #14AAF5;
+    color: white;
+    padding: 30px 0;
+    margin-top: 50px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-bottom: 0;
+}
+
+.footer-info h3 {
+    margin-bottom: 10px;
+}
+
+.map {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.map iframe {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+}
+
+/* Styles for modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Animasi untuk modal */
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
